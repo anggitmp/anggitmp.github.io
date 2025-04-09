@@ -1,0 +1,76 @@
+<html>
+    <body>
+        <header>
+            <title>Website Sederhana</title>
+            <meta name="viewport" content="width=device-width, initial-scale="1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Profile">Profile</a></li>
+                    <li><a href="Hobby">Hobby</a></li>
+                    <li><a href="Cinema">Cinema</a></li>
+                    <li><a href="Music">Music</a></li>
+                    <li><a href="Form">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="gambar/heading.png" class="cover-image">
+            </div>
+        </header>
+
+        <main>
+            <div id="content">
+                <article id="Profile" class="card">
+                    <h2>Profile</h2>
+                    <img src="gambar/paragraf.png" class ="featured-image" alt="Konten1">
+                    <p>I'm Anggit Mulianing Pambudi, a 4th semester Information Systems student who works in the field of UI Designer, this skill is one of the skills that I master in my career field.</p>
+                </article>
+
+                <article id="Hobby" class="card">
+                    <h2>Hobby</h2>
+                    <img src="gambar/hobi.png" class ="featured-image" alt="Konten2">
+                    <p>There are 3 main hobbies and as a support in developing UI Designer skills. Through my skills and hobbies, I managed to get a 2-digit salary at Deloitte Company.</p>
+                </article>
+
+                <article id="Cinema"class="card">
+                    <h2>Cinema</h2>
+                    <video width="1300" height="480" right="240" controls>
+                    <source src="video/Clip.mp4" type="video/mp4">
+                    </video> 
+                    <p>Sombr - Back To Friend</p>
+                </article>
+
+                <article id="Music"class="card">
+                    <h2>Music</h2>
+                    <audio controls>
+                    <source src="audio/Feast.mp3" type="audio/mp3">
+                    </audio>
+                    <p>This music remind me about my past.</p>
+                </article>
+
+                <section id="contact">
+                    <h2>Feedback</h2>
+                    <form id="contactForm"onsubmit="saveFeedback(event)">
+                        <label for="fname">Nama :</label><br>
+                        <input type="text" id="fname" name="fname" required><br><br>
+                
+                        <label for="pesan">Pesan:</label><br>
+                        <textarea id="pesan" name="pesan" required></textarea><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <button type="submit">Kirim</button>
+                    </form>
+                    <div id="displayArea"></div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with &#169;2024. Gie's Portofolio.</p>
+        </footer>
+    </body>
+</html>
