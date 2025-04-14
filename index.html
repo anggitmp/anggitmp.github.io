@@ -2,18 +2,20 @@
     <body>
         <header>
             <title>Website Sederhana</title>
+            <link rel="stylesheet" href="style/style.css">
             <meta name="viewport" content="width=device-width, initial-scale="1>
 
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="Profile">Profile</a></li>
-                    <li><a href="Hobby">Hobby</a></li>
-                    <li><a href="Cinema">Cinema</a></li>
-                    <li><a href="Music">Music</a></li>
-                    <li><a href="Form">Form</a></li>
+                  <a href="#">Home</a> |
+                  <a href="#Profile">Profile</a> |
+                  <a href="#Hobby">Hobby</a> |
+                  <a href="#Cinema">Cinema</a> |
+                  <a href="#Music">Music</a> |
+                  <a href="#contact">Form</a> |
                 </ul>
-            </nav>
+              </nav>
+              
             <div>
                 <img src="gambar/heading.png" class="cover-image">
             </div>
@@ -52,10 +54,10 @@
                 <section id="contact">
                     <h2>Feedback</h2>
                     <form id="contactForm"onsubmit="saveFeedback(event)">
-                        <label for="fname">Nama :</label><br>
+                        <label for="fname">Name :</label><br>
                         <input type="text" id="fname" name="fname" required><br><br>
                 
-                        <label for="pesan">Pesan:</label><br>
+                        <label for="pesan">Message:</label><br>
                         <textarea id="pesan" name="pesan" required></textarea><br><br>
                 
                         <label for="email">Email:</label><br>
